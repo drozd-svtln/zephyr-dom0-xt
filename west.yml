@@ -10,11 +10,15 @@ manifest:
       url-base: https://github.com/xen-troops/
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos/
+    - name: firscity
+      url-base: https://github.com/firscity/
+    - name: darkon
+      url-base: https://github.com/drozd-svtln/
 
   projects:
     - name: zephyr
-      remote: xentroops
-      revision: zephyr-v3.6.0-xt
+      remote: darkon
+      revision: zephyr-v4.3.0-xt-dev
       west-commands: scripts/west-commands.yml
     - name: zephyr-xenlib
       remote: xentroops
