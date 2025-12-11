@@ -5,6 +5,7 @@
  */
 
  /delete-node/ &sram0;
+ /delete-node/ &pcie2;
 
 #include <mem.h>
 
