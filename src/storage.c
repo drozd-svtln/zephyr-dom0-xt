@@ -92,6 +92,7 @@ int storage_init(void)
 	ret = disk_access_init(DISK_DRIVE_NAME);
 	if (ret) {
 		LOG_ERR("storage: init failed (%d)", ret);
+		LOG_ERR("MY_LOG: DISK_DRIVE_NAME %s", DISK_DRIVE_NAME);
 		goto exit_err;
 	}
 
