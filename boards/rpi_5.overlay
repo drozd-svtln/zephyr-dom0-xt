@@ -7,6 +7,7 @@
  /delete-node/ &sram0;
  /delete-node/ &pcie2;
  /delete-node/ &pcie1;
+ /delete-node/ &rng;
 
 #include <mem.h>
 
@@ -18,6 +19,7 @@
 		zephyr,console = &xen_consoleio_hvc;
 		zephyr,shell-uart = &xen_consoleio_hvc;
 		/delete-property/ zephyr,pcie-controller;
+		/delete-property/ zephyr,entropy;
 	};
 
 	psci {
