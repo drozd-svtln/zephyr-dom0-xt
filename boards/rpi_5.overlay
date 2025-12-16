@@ -17,6 +17,7 @@
 	chosen {
 		zephyr,console = &xen_consoleio_hvc;
 		zephyr,shell-uart = &xen_consoleio_hvc;
+		/delete-property/ zephyr,pcie-controller;
 	};
 
 	psci {
