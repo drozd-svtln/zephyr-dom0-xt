@@ -12,11 +12,13 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos/
     - name: firscity
       url-base: https://github.com/firscity/
+    - name: darkon
+      url-base: https://github.com/drozd-svtln/
 
   projects:
     - name: zephyr
-      remote: firscity
-      revision: zephyr-v4.2.0-xt_rc1
+      remote: darkon
+      revision: dbg-zephyr-v4.2.0-xt-dev
       west-commands: scripts/west-commands.yml
     - name: zephyr-xenlib
       remote: xentroops
