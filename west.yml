@@ -10,18 +10,20 @@ manifest:
       url-base: https://github.com/xen-troops/
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos/
+    - name: darkon
+      url-base: https://github.com/drozd-svtln/zephyr-xenlib.git
 
   projects:
     - name: zephyr
       remote: xentroops
-      revision: zephyr-v4.3.0-xt
+      revision: 593e3f6c962e97d070efb0f99633dd92da3aa594
       west-commands: scripts/west-commands.yml
     - name: zephyr-xenlib
-      remote: xentroops
-      revision: main
+      remote: darkon
+      revision: 7e8f69193bbeb93feed7227fd062d9fc5f50cdf0
     - name: fatfs
       remote: zephyrproject-rtos
       revision: f4ead3bf4a6dab3a07d7b5f5315795c073db568d
     - name: zephyr-xrun
       remote: xentroops
-      revision: main
+      revision: 5b6ecf274bac79b0be740693766a88d3eedf3b44
